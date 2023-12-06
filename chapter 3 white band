@@ -1,10 +1,10 @@
->>> name = input("Enter your name: ")
-Enter your name: Samarth
->>> age = int(input("Enter your age: "))
-Enter your age: 45
->>> favorite_color = input("Enter your favorite color: ")
-Enter your favorite color: Blue
->>> print("Your name is", name)
-Your name is Samarth
->>> print("Your name is", name, "you are", age, "years old and your favorite color is", favorite_color)
-Your name is Samarth you are 45 years old and your favorite color is Blue
+name = input("Enter your name: ")
+
+age = int(input("Enter your age: "))
+
+favorite_color = input("Enter your favorite color: ")
+
+print("Your name is", name)
+
+print("Your name is", name, "you are", age, "years old and your favorite color is", favorite_color)
+
