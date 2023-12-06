@@ -1,0 +1,10 @@
+amount = int(input("Enter amount: "))
+
+tax_percentage = 18
+
+tax_amount = amount * (tax_percentage / 100)
+
+total_amount_with_tax = amount + tax_amount
+
+
+print("Total amount with tax is ", total_amount_with_tax, "dollars.")
