@@ -1,0 +1,12 @@
+print('This doesn\'t mean anything')
+print("This doesn't mean anything")
+print('He said "hello"')
+print("He said \"hello\"")
+print("Line 1 \nLine 2")
+print(r"identifications\names")
+print("""
+This is the first line here
+This is the second line here
+This is the third line here
+""")
+print(3 * "ha", "your funny")
