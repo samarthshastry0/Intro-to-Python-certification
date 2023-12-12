@@ -1,0 +1,20 @@
+items = {"Chips": 1.50, "Candy": 0.75, "Soda": 2.00, "Water": 1.25}
+
+money_inserted = float(input("Enter the amount of money you want to insert: "))
+  while money_inserted > 0:
+    for item, price in items.items():
+        print(item + ": $" + str(price))
+    
+    choice = input("\nEnter the item you want to purchase (or 'exit' to exit): ")
+    
+    if choice == 'exit':
+        break;
+
+    if choice in items:
+        if money_inserted < items[choice]:
+            print("Sorry, you don't have enough money to purchase this item.")
+        else:
+            money_inserted -= items[choice]
+            print("You purchased " + choice + " for $" + str(items[choice]) + " and you have $" + str(money_inserted) + " remaining.")
+    else:
+        print("Sorry, that item is not available.")
