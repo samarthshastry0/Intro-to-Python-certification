@@ -1,0 +1,16 @@
+fruits = {'apple': 0.5}
+fruits['banana'] = 0.25
+apple_price = fruits['apple']
+
+print('An apple costs $' + apple_price)
+
+fruits['mango'] = 1.25
+
+fruits['banana'] = 0.35
+
+pear_price = fruits.get('pear', 'unknown')
+print('A pear costs $' + pear_price)
+
+del fruits['orange']
+
+print(fruits)
