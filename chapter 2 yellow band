@@ -1,0 +1,20 @@
+import turtle
+
+shape = input('What shape do you want to draw (square, triangle or circle)? ')
+
+t = turtle.Turtle()
+
+if shape == 'square':
+    for i in range(4):
+        t.forward(100)
+        t.right(90)
+elif shape == 'triangle':
+    for i in range(3):
+        t.forward(120)
+        t.left(120)
+elif shape == 'circle':
+    t.circle(100)
+else:
+    print('Invalid shape. Please choose either square, triangle, or circle.')
+
+turtle.exitonclick()
