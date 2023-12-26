@@ -1,0 +1,10 @@
+yn = "no"
+while yn == "no":
+    listo += input("enter numbers you wist to add to the list: " )
+    yn = input("Are you done(yes or no)? ")
+n = 0
+for i in range (len(listo)):
+    if listo[i] % 2 == 0:
+        n += listo[i]
+
+  print(n)
