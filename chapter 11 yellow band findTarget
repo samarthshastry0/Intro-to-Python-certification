@@ -14,5 +14,5 @@ def findTarget(list, n, int):
       return False
   if (lst[n-1] >  int):
       return findTarget(lst, n-1, int)  
-  return findTarget(lst, n-1, int) or findTarget(lst, n-1, int-lst[n-1])
+  return findTarget(lst, n-1, int-lst[n-1])
 findTarget(lst, count, target)
