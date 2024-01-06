@@ -1,4 +1,5 @@
 lst = []
+yn = "no"
 while yn == "no":
     n = input("enter numbers you wist to add in list: " )
     lst += n
