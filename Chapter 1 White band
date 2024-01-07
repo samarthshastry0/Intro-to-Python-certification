@@ -1,12 +1,18 @@
+# Prints the words hello world
 print("hello world")
-
+ 
+#Prints the result of the expression (7-2) raised to the power of 4
 print((7-2)**4)
 
+# Print the result of the division 9/2
 9/2
 
+# Print the result of the intiger division 9//2
 9//2
 
+# Print the remainder of the division 9/2
 9%2
 
+# Print the result of the expression 9 multiplied by 2 and then added to 7
 9*2+7
 
