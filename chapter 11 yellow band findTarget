@@ -1,18 +1,20 @@
 lst = []
 yn = "no"
 while yn == "no":
-    n = input("enter numbers you wist to add in list: " )
-    lst += n
+    n = int(input("enter numbers you wist to add in list: " ))
+    lst.append(n)
     yn = input("Are you done(yes or no)? ")
-    count += 1
-target = input("enter target number here: ")
-  
-def findTarget(list, n, int):
-  if int == 0:
+
+target = int(input("enter target number here: "))
+
+def findTarget(list, n, number):
+  if number == 0:
       return True
   if n == 0:
       return False
-  if (lst[n-1] >  int):
-      return findTarget(lst, n-1, int)  
-  return findTarget(lst, n-1, int-lst[n-1])
-findTarget(lst, count, target)
+  if (lst[n-1] >  number):
+      return findTarget(lst, n-1, number)  
+  return findTarget(lst, n-1, number) or findTarget(lst, n-1, number-lst[n-1])
+print(findTarget(lst, len(lst), target))
+
+
