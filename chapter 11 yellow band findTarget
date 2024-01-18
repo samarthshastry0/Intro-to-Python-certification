@@ -1,20 +1,35 @@
+#Initialize variables
 lst = []
 yn = "no"
+
+#Get list inputted from user
 while yn == "no":
     n = int(input("enter numbers you wist to add in list: " ))
     lst.append(n)
     yn = input("Are you done(yes or no)? ")
 
+#Get target number to be found in list
 target = int(input("enter target number here: "))
 
+#Recursive function to find if subset exists
 def findTarget(list, n, number):
+  #Special case, if target number is 0 no list is needed
   if number == 0:
       return True
+
+  #Special case, if no list is inputted, no subset can be found
   if n == 0:
       return False
+
+  #If the last number in the list is greater than target number, remove last index from list and recall function
   if (lst[n-1] >  number):
       return findTarget(lst, n-1, number)  
+
+  #If number is not used in the target subset we go down the first recursion branch
+  #If number is used in the target subset it goes down the second reursion branch
   return findTarget(lst, n-1, number) or findTarget(lst, n-1, number-lst[n-1])
+
+#Call the function and print the result
 print(findTarget(lst, len(lst), target))
 
 
