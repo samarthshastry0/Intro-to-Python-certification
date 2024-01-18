@@ -7,7 +7,7 @@ print((7-2)**4)
 # Print the result of the division 9/2
 9/2
 
-# Print the result of the intiger division 9//2
+# Print the result of the integer division 9//2
 9//2
 
 # Print the remainder of the division 9/2
