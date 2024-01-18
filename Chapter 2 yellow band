@@ -1,29 +1,46 @@
+# Import turtle
 import turtle
 
+
+#Move turtle forward 50 
 turtle.forward(50)
 print("Going forward 50 - " + str(turtle.position()))
 
+
+#Turn turtle left
 turtle.left(90)
 print("turning left 90 deg " + str(turtle.position()))
 print("current angle " + str(turtle.heading()))
 
+
+#Move turtle forward 50
 turtle.forward(50)
 print("\nGoing forward 50 - " + str(turtle.position()))
 
+
+#Turn turtle left
 turtle.left(90)
 print("turning left 90 deg " + str(turtle.position()))
 print("current angle " + str(turtle.heading()))
 
+
+#Move turtle forward
 turtle.forward(50)
 print("\nGoing forward 50 - " + str(turtle.position()))
 
+
+#Turn turtle left
 turtle.left(90)
 print("turning left 90 deg " + str(turtle.position()))
 print("current angle " + str(turtle.heading()))
 
+
+#Move turtle forward
 turtle.forward(50)
 print("\nGoing forward 50 - " + str(turtle.position()))
 
+
+#Turn turtle left
 turtle.left(90)
 print("turning left 90 deg" + str(turtle.position()))
 print("current angle " + str(turtle.heading()))
