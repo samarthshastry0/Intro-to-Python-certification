@@ -1,9 +1,12 @@
+#Get age, birthplace, and residency as input
 age = int(input("How old are you?: "))
 bornInUS = input("Were you born in the US?: ")
 residency = int(input("How many years of residency do you have?: "))
 
+#Initialize bool isEligible
 isEligible = True
 
+#Check conditions and change eligibility based on conditions
 if age < 35:
     isEligible = False
 if bornInUS == "no":
@@ -11,6 +14,7 @@ if bornInUS == "no":
 if residency < 14:
     isEligible = False
 
+#Check to see if conditions are met or not
 if isEligible:
     print("You are eligible for president!")
 else:
