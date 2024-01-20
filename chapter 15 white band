@@ -1,20 +1,31 @@
+# Define a dictionary of items and their prices
 items = {"Chips": 1.50, "Candy": 0.75, "Soda": 2.00, "Water": 1.25}
 
+# Get the amount of money the user wants to insert
 money_inserted = float(input("Enter the amount of money you want to insert: "))
-  while money_inserted > 0:
+
+# Continue the loop as long as there is money inserted
+while money_inserted > 0:
+    # Display the available items and their prices
     for item, price in items.items():
         print(item + ": $" + str(price))
-    
+
+    # Ask the user to enter the item they want to purchase or 'exit' to exit
     choice = input("\nEnter the item you want to purchase (or 'exit' to exit): ")
-    
+
+    # Check if the user wants to exit
     if choice == 'exit':
         break;
 
+    # Check if the chosen item is available
     if choice in items:
+        # Check if the user has enough money to purchase the item
         if money_inserted < items[choice]:
             print("Sorry, you don't have enough money to purchase this item.")
         else:
+            # Deduct the item price from the inserted money and display the purchase information
             money_inserted -= items[choice]
             print("You purchased " + choice + " for $" + str(items[choice]) + " and you have $" + str(money_inserted) + " remaining.")
     else:
+        # Display a message if the chosen item is not available
         print("Sorry, that item is not available.")
