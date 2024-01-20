@@ -1,10 +1,14 @@
+#Initialize variables
 x = 12
 y = 42
 z = 9999
 
+#Add x and z
 x + z
 
+#Add x and z then divide the sum by y
 (x+z)/y
 
+#Round the answer to 2 digits
 round(_,2)
 
