@@ -1,10 +1,17 @@
+#Initialize yn
 yn = "no"
+
+#While yn is no, allow the user to add another number to the list
 while yn == "no":
     listo += input("enter numbers you wist to add to the list: " )
     yn = input("Are you done(yes or no)? ")
+#Initialize n
 n = 0
+
+#Add all the even numbers into n
 for i in range (len(listo)):
     if listo[i] % 2 == 0:
         n += listo[i]
 
-  print(n)
+#Print n
+print(n)
