@@ -1,16 +1,31 @@
+#Initialize a dictionary 'fruits' with 'apple' and value 0.5
 fruits = {'apple': 0.5}
+
+#Add 'banana' with value 0.25 to the 'fruits' dictionary
 fruits['banana'] = 0.25
+
+#Access the price of an apple from the 'fruits' dictionary
 apple_price = fruits['apple']
 
-print('An apple costs $' + apple_price)
+#Print a message about the cost of an apple
+print('An apple costs $' + str(apple_price))
 
+#Add 'mango' with value 1.25 to the 'fruits' dictionary
 fruits['mango'] = 1.25
 
+#Change the value of 'banana' to 0.35 in the 'fruits' dictionary
 fruits['banana'] = 0.35
 
+#Use the get method to retrieve the price of a 'pear' from 'fruits'
+#If 'pear' is not present, set 'unknown' as the default value
 pear_price = fruits.get('pear', 'unknown')
-print('A pear costs $' + pear_price)
 
+#Print a message about the cost of a pear
+print('A pear costs $' + str(pear_price))
+
+#Delete the key 'orange' from the 'fruits' dictionary
 del fruits['orange']
 
+
+# Print the contents of fruits
 print(fruits)
