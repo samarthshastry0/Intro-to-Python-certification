@@ -1,10 +1,14 @@
+#Enter amount being taxed
 amount = int(input("Enter amount: "))
 
+#Initialize tax%
 tax_percentage = 18
 
+#Calculate tax amount
 tax_amount = amount * (tax_percentage / 100)
 
+#Calculate total amount with tax
 total_amount_with_tax = amount + tax_amount
 
-
+#Print total amount with tax
 print("Total amount with tax is ", total_amount_with_tax, "dollars.")
