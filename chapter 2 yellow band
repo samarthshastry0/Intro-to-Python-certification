@@ -1,20 +1,31 @@
+#Import turtle
 import turtle
 
+#Ask user what shape he wants to draw
 shape = input('What shape do you want to draw (square, triangle or circle)? ')
 
+#Initialize turtle
 t = turtle.Turtle()
 
+#If the user asks to draw a square, draw square
 if shape == 'square':
     for i in range(4):
         t.forward(100)
         t.right(90)
+
+#If the user asks to draw a triangle, draw triangle
 elif shape == 'triangle':
     for i in range(3):
         t.forward(120)
         t.left(120)
+
+#If the user asks to draw a circle, draw circle
 elif shape == 'circle':
     t.circle(100)
+
+#If user does not input square, triangle, or circle print error
 else:
     print('Invalid shape. Please choose either square, triangle, or circle.')
 
+#Exit turtle when click outside window
 turtle.exitonclick()
