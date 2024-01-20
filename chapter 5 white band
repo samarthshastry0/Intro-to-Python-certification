@@ -1,12 +1,27 @@
+#Single quotes to include an apostrophe
 print('This doesn\'t mean anything')
+
+#Double quotes to include an apostrophe
 print("This doesn't mean anything")
+
+#Single quotes to include double quotes
 print('He said "hello"')
+
+#Double quotes to include double quotes
 print("He said \"hello\"")
+
+#Newline character to create two lines
 print("Line 1 \nLine 2")
+
+#Raw string to treat backslashes as literal characters
 print(r"identifications\names")
+
+#Multiline string using triple double quotes
 print("""
 This is the first line here
 This is the second line here
 This is the third line here
 """)
+
+#Repeat "ha" three times, followed by "your funny"
 print(3 * "ha", "your funny")
