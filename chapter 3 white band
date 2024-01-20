@@ -1,10 +1,15 @@
+#Get name as input
 name = input("Enter your name: ")
 
+#Get age as input
 age = int(input("Enter your age: "))
 
+#Get favorite color as input
 favorite_color = input("Enter your favorite color: ")
 
+#Print name sentence
 print("Your name is", name)
 
+#Print name, age and favorite color sentence
 print("Your name is", name, "you are", age, "years old and your favorite color is", favorite_color)
 
